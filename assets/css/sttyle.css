@@ -1,0 +1,275 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --red: #E00712;
+    --backAbout: #181818;
+    --blackSeason: #090909;
+    --blackSelect: #2a2323;
+    --gray: #a6a6a6;
+}
+
+*, header, main, footer {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+    width: 100%;
+    position: fixed;
+    background: transparent;
+    z-index: 10;   
+}
+
+.logoHeader {
+    width: 150px;
+}
+
+.listHeader {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.aHeader {
+    color: var(--white);
+    font-size: 18;
+    font-weight: 700;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+.home {
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../imagens/background1.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:  0 150px 0 0;
+    animation-name: mudaBack;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mudaBack {
+    0% {
+        background-image: url("../imagens/background1.jpg");
+    }
+    50% {
+        background-image: url("../imagens/HD-wallpaper-the-walking-dead-intro-the-dead-walk.jpg");
+    }
+    75% {
+        background-image: url("../imagens/wallpapersden.com_the-walking-dead-hd-all-character_2560x1440.jpg");
+    }
+}
+.boxBlack {
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(91.42deg, var(--black) 10%, rgba(0, 0, 0, 0) 98.96%);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 9;
+    padding: 200px 150px 200px 150px;
+}
+
+.contentHome {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.h3Title {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contentSpecification {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.contentSpecification h4, .contentHome p {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contentSpecification img {
+    border: 1px solid var(--red);
+    border-radius: 5px;
+}
+
+.contentHome p {
+    font-size: 18px;
+}
+
+/* --------------- about----------------- */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 100px 150px;
+    background-color: var(--backAbout);
+}
+
+.headerSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.titleSection {
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.line1 {
+    height: 5px;
+    width: 70%;
+    background: var(--red);
+    border-radius: 15px;
+}
+
+.contentAbout {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentAbout p {
+    color: var(--white);
+    font-weight: 400;
+    width: 50%;
+}
+
+/* ----------------- seasons -------------- */
+.seasons {
+    background: var(--blackSeason);
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+}
+
+.contentSeasons {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.headerContentSeason {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerContentSeasonTitle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.headerContentSeasonTitle h3 {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.headerContentSeasonTitle select {
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--red);
+    font-weight: 700;
+    font-size: 18px;
+    background-color: var(--blackSelect);
+}
+
+.headerContentSeasonTitle select:focus {
+    outline: none;
+}
+
+.inputSearch {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.episodes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+
+.eps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    margin-bottom: 30px;
+}
+.eps img {
+    border-radius: 10px;
+}
+
+.divTitles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.titleEps {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.duration {
+    color: var(--gray);
+}
+
+.cta {
+    background-color: var(--red);
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.cta:hover {
+    opacity: 0.8;
+}
