@@ -1,6 +1,7 @@
 :root {
     --black: #000;
     --white: #fff;
+    --white80: #ffffff80;
     --red: #E00712;
     --backAbout: #181818;
     --blackSeason: #090909;
@@ -272,4 +273,71 @@ main {
 
 .cta:hover {
     opacity: 0.8;
+}
+
+
+/* ----------persons ------------- */
+.sectionPersons{
+    background: var(--backAbout);
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contentPersons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.contentPersons h3 {
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.persons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+    
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.person img {
+    border-radius: 10px;    
+}
+
+.divNames {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    align-items: center;
+    text-align: center;
+}
+.name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    width: 100%;
+}
+.nameSerie {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white80);
+    width: 100%; 
 }
