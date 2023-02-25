@@ -27,272 +27,261 @@ const s1 = [
 
 const s2 = [
     {
-        title: 'tempo2',
-        duration: 67
+        title: 'O que vem pela frente',
+        duration: 63
     },
     {
-        title: 'Estranhas',
-        duration: 45
+        title: 'Sangria',
+        duration: 42
     },
     {
-        title: 'Vá falar com sapos',
-        duration: 45
+        title: 'Última bala',
+        duration: 43
     },
     {
-        title: 'Hermanos',
-        duration: 45
+        title: 'Rosa cherokee',
+        duration: 43
     },
     {
-        title: 'Wildfire',
-        duration: 45
+        title: 'Chupa-cabra',
+        duration: 43
     },
     {
-        title: 'IT-19',
-        duration: 45
+        title: 'Segredos',
+        duration: 43
+    },
+    {
+        title: 'Já quase morto',
+        duration: 43
+    },
+    {
+        title: 'Nebraska',
+        duration: 43
+    },
+    {
+        title: 'Dedo no gatilho',
+        duration: 43
+    },
+    {
+        title: 'A 29 km',
+        duration: 43
+    },
+    {
+        title: 'Juiz, júri, carrasco',
+        duration: 43
+    },
+    {
+        title: 'Anjos bons',
+        duration: 43
+    },
+    {
+        title: 'Fogueira apagando',
+        duration: 43
     },
 ]
 
 const s3 = [
     {
-        title: 'tempo3',
-        duration: 67
+        title: 'Sementes',
+        duration: 43
     },
     {
-        title: 'Estranhas',
-        duration: 45
+        title: 'Doente',
+        duration: 43
     },
     {
-        title: 'Vá falar com sapos',
-        duration: 45
+        title: 'Vem comigo',
+        duration: 43
     },
     {
-        title: 'Hermanos',
-        duration: 45
+        title: 'O assassino dentro',
+        duration: 43
+    }, 
+    {
+        title: 'É só falar',
+        duration: 43
     },
     {
-        title: 'Wildfire',
-        duration: 45
+        title: 'Atormentado',
+        duration: 43
+    },   
+    {
+        title: 'Mortos batem à porta',
+        duration: 43
     },
     {
-        title: 'IT-19',
-        duration: 45
+        title: 'Nascidos para sofrer',
+        duration: 43
     },
+    {
+        title: 'O rei suicida',
+        duration: 43
+    },
+    {
+        title: 'Lar',
+        duration: 43
+    },  
+    {
+        title: 'Não sou Judas',
+        duration: 43
+    },
+    {
+        title: 'Limpo',
+        duration: 43
+    },
+    {
+        title: 'Flecha na porta',
+        duration: 43
+    },
+    {
+        title: 'Presa',
+        duration: 43
+    },
+    {
+        title: 'Vida em luto',
+        duration: 43
+    },
+    {
+        title: 'Bem-vindos ao túmulo',
+        duration: 43
+    },
+    
 ]
 
 const s4 = [
     {
-        title: 'tempo4',
-        duration: 67
+        title: '30 dias sem acidentes',
+        duration: 43
     },
     {
-        title: 'Estranhas',
-        duration: 45
+        title: 'Infectados',
+        duration: 43
     },
     {
-        title: 'Vá falar com sapos',
-        duration: 45
+        title: ' Isolamento',
+        duration: 43
     },
     {
-        title: 'Hermanos',
-        duration: 45
+        title: 'Indiferença',
+        duration: 43
     },
     {
-        title: 'Wildfire',
-        duration: 45
+        title: 'Confinados',
+        duration: 43
     },
     {
-        title: 'IT-19',
-        duration: 45
+        title: 'Isca viva',
+        duration: 43
     },
+    {
+        title: 'Peso morto',
+        duration: 43
+    },
+    {
+        title: 'Longe demais',
+        duration: 43
+    },
+    {
+        title: 'Depois',
+        duration: 43
+    },
+    {
+        title: 'Prisioneiros',
+        duration: 43
+    },
+    {
+        title: 'Tem dono',
+        duration: 43
+    },
+    {
+        title: 'Alambique',
+        duration: 43
+    },
+    {
+        title: 'Sozinho',
+        duration: 43
+    },
+    {
+        title: 'O bosque',
+        duration: 43
+    },
+    {
+        title: 'Nós',
+        duration: 43
+    },
+    {
+        title: 'A',
+        duration: 43
+    },
+    
 ]
 
 const s5 = [
     {
-        title: 'tempo5',
-        duration: 67
+        title: 'Sem refúgio',
+        duration: 44
     },
     {
-        title: 'Estranhas',
-        duration: 45
+        title: 'Estranhos',
+        duration: 43
     },
     {
-        title: 'Vá falar com sapos',
-        duration: 45
+        title: 'Quatro paredes e um telhado',
+        duration: 43
     },
     {
-        title: 'Hermanos',
-        duration: 45
+        title: 'Cidade das lápides',
+        duration: 43
     },
     {
-        title: 'Wildfire',
-        duration: 45
+        title: 'Autoajuda',
+        duration: 43
     },
     {
-        title: 'IT-19',
-        duration: 45
-    },
-]
-
-const s6 = [
-    {
-        title: 'tempo6',
-        duration: 67
+        title: 'Consumidos',
+        duration: 43
     },
     {
-        title: 'Estranhas',
-        duration: 45
+        title: 'Crucifixos',
+        duration: 43
     },
     {
-        title: 'Vá falar com sapos',
-        duration: 45
+        title: 'Coda',
+        duration: 43
     },
     {
-        title: 'Hermanos',
-        duration: 45
+        title: 'O que foi e o que está sendo',
+        duration: 43
     },
     {
-        title: 'Wildfire',
-        duration: 45
+        title: 'Eles',
+        duration: 43
     },
     {
-        title: 'IT-19',
-        duration: 45
-    },
-]
-
-const s7 = [
-    {
-        title: 'tempo7',
-        duration: 67
+        title: 'Distância',
+        duration: 43
     },
     {
-        title: 'Estranhas',
-        duration: 45
+        title: 'Lembrar',
+        duration: 43
     },
     {
-        title: 'Vá falar com sapos',
-        duration: 45
+        title: 'Esquecer',
+        duration: 43
     },
     {
-        title: 'Hermanos',
-        duration: 45
+        title: 'Desperdiçar',
+        duration: 43
     },
     {
-        title: 'Wildfire',
-        duration: 45
+        title: 'Tentar',
+        duration: 43
     },
     {
-        title: 'IT-19',
-        duration: 45
+        title: 'Conquistar',
+        duration: 65
     },
-]
-
-const s8 = [
-    {
-        title: 'tempo8',
-        duration: 67
-    },
-    {
-        title: 'Estranhas',
-        duration: 45
-    },
-    {
-        title: 'Vá falar com sapos',
-        duration: 45
-    },
-    {
-        title: 'Hermanos',
-        duration: 45
-    },
-    {
-        title: 'Wildfire',
-        duration: 45
-    },
-    {
-        title: 'IT-19',
-        duration: 45
-    },
-]
-
-const s9 = [
-    {
-        title: 'tempo9',
-        duration: 67
-    },
-    {
-        title: 'Estranhas',
-        duration: 45
-    },
-    {
-        title: 'Vá falar com sapos',
-        duration: 45
-    },
-    {
-        title: 'Hermanos',
-        duration: 45
-    },
-    {
-        title: 'Wildfire',
-        duration: 45
-    },
-    {
-        title: 'IT-19',
-        duration: 45
-    },
-]
-
-const s10 = [
-    {
-        title: 'tempo10',
-        duration: 67
-    },
-    {
-        title: 'Estranhas',
-        duration: 45
-    },
-    {
-        title: 'Vá falar com sapos',
-        duration: 45
-    },
-    {
-        title: 'Hermanos',
-        duration: 45
-    },
-    {
-        title: 'Wildfire',
-        duration: 45
-    },
-    {
-        title: 'IT-19',
-        duration: 45
-    },
-]
-
-const s11 = [
-    {
-        title: 'tempo11',
-        duration: 67
-    },
-    {
-        title: 'Estranhas',
-        duration: 45
-    },
-    {
-        title: 'Vá falar com sapos',
-        duration: 45
-    },
-    {
-        title: 'Hermanos',
-        duration: 45
-    },
-    {
-        title: 'Wildfire',
-        duration: 45
-    },
-    {
-        title: 'IT-19',
-        duration: 45
-    },
+   
 ]
 
 const persons = [
@@ -364,7 +353,7 @@ window.addEventListener('load', function(){
 });
 
 // função que retorna a string HTML do episódio
-function eps(t, e, title, duration) {
+function epsode(t, e, title, duration) {
     return (
         `
         <img src="assets/imagens/temporadas/t${t}e${e}.jpg" alt="">
@@ -380,24 +369,18 @@ function eps(t, e, title, duration) {
 function createList(season, nSeason){
     let divEps = document.querySelector('.episodes');
     divEps.innerHTML = '';
+    divEps.classList.remove('episodesSearch')
      
     let e = 1;
     season.forEach((item)=> {
         const li = document.createElement("li");
         li.classList.add('eps');
 
-        li.innerHTML = eps(nSeason, e, item.title, item.duration);
+        li.innerHTML = epsode(nSeason, e, item.title, item.duration);
         divEps.appendChild(li); 
         e++;
     });
-    // for (let i = 1; i <= t.length; i++) {
-    //     const item = document.createElement("li");
-    //     item.classList.add('eps');
-    //     item.innerHTML = eps(i, t[i-1].title, t[i-1].duration);
-    //     divEps.appendChild(item);
-    // }
 }
-
 
 const selected = document.querySelector('.select');
 selected.addEventListener('change', function() {
@@ -419,32 +402,10 @@ selected.addEventListener('change', function() {
         case 's5':
             createList(s5, 5);
             break;
-        case 's6':
-            createList(s6, 6);
-            break;
-        case 's7':
-            createList(s7, 7);
-            break;
-        case 's8':
-            createList(s8, 8);
-            break;
-        case 's9':
-            createList(s9, 9);
-            break;
-        case 's10':
-            createList(s10, 10);
-            break;
-        case 's11':
-            createList(s11, 11);
-            break;
         default: 
             console.log('erro');        
     }
 });
-
-
-
-
 
 
 //-----------------------------------------
@@ -462,10 +423,68 @@ function person(i, name, nameSerie) {
     )
 }
 
-for (let i = 1; i <= 15; i++) {
+for (let i = 1; i <= persons.length; i++) {
   const item = document.createElement("li");
   item.classList.add('person');
   item.innerHTML = person(i, persons[i-1].name, persons[i-1].nameSerie);
   divPersons.appendChild(item);
 }
 
+//-------------- SEARCH-----------------------------
+
+const sub = document.querySelector('.submit');
+sub.addEventListener('click', function() {
+    const valueSearch = document.querySelector('.inputSearch').value;
+    const seasonSelect = document.querySelector('.select').value;
+    
+    switch(seasonSelect){
+        case 's1':
+            search(s1, valueSearch, 1);
+            break;
+        case 's2':
+            search(s2, valueSearch, 2);
+            break;
+        case 's3':
+            search(s3, valueSearch, 3);
+            break;
+        case 's4':
+            search(s4, valueSearch, 4);
+            break;
+        case 's5':
+            search(s5, valueSearch, 5);
+            break;
+        default: 
+            console.log('erro');        
+    }
+});
+
+function search(season,valueSearch, t ){
+    
+    if(valueSearch && valueSearch !== ' '){
+        let cont = 0;
+
+        for(let i = 0; season.length; i++){
+            const title = season[i].title;
+
+            
+            if(title.toUpperCase().includes(valueSearch.toUpperCase())){
+                
+                let divEps = document.querySelector('.episodes');
+                divEps.classList.add('episodesSearch')
+                if(cont === 0){
+                    divEps.innerHTML = '';
+                }
+                                
+                const li = document.createElement("li");
+                li.classList.add('eps');
+                li.innerHTML = epsode(t, i+1, season[i].title, season[i].duration);
+                
+                divEps.appendChild(li);
+                document.querySelector('.inputSearch').value = '';
+                cont++;
+               
+            }
+            
+        }
+    }
+}

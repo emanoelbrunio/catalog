@@ -25,6 +25,12 @@ header {
     z-index: 10;   
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .logoHeader {
     width: 150px;
 }
@@ -223,11 +229,31 @@ main {
     font-size: 18px;
 }
 
+.inputSearch:focus {
+    outline: 2px solid var(--red);
+}
+
+.submit {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
 .episodes {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+
+.episodesSearch {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
     align-items: start;
     gap: 20px;
 }
