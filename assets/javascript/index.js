@@ -24,7 +24,6 @@ const s1 = [
         duration: 45
     },
 ]
-
 const s2 = [
     {
         title: 'O que vem pela frente',
@@ -79,7 +78,6 @@ const s2 = [
         duration: 43
     },
 ]
-
 const s3 = [
     {
         title: 'Sementes',
@@ -147,7 +145,6 @@ const s3 = [
     },
     
 ]
-
 const s4 = [
     {
         title: '30 dias sem acidentes',
@@ -215,7 +212,6 @@ const s4 = [
     },
     
 ]
-
 const s5 = [
     {
         title: 'Sem refúgio',
@@ -283,7 +279,6 @@ const s5 = [
     },
    
 ]
-
 const persons = [
     {
         name: 'Norman Reedus',
@@ -348,11 +343,16 @@ const persons = [
    
 ]
 
+
+
+//assim que a pag carregar, iniciar na season 1
 window.addEventListener('load', function(){
     createList(s1, 1);
 });
 
-// função que retorna a string HTML do episódio
+
+
+// componente do episodio
 function epsode(t, e, title, duration) {
     return (
         `
@@ -366,6 +366,9 @@ function epsode(t, e, title, duration) {
     )
 }
 
+
+
+//funçao para desenhar a lista de episodios
 function createList(season, nSeason){
     let divEps = document.querySelector('.episodes');
     divEps.innerHTML = '';
@@ -382,6 +385,9 @@ function createList(season, nSeason){
     });
 }
 
+
+
+//verificando qual season está selecionada
 const selected = document.querySelector('.select');
 selected.addEventListener('change', function() {
     const selectedValue = selected.value;
@@ -408,27 +414,6 @@ selected.addEventListener('change', function() {
 });
 
 
-//-----------------------------------------
-
-let divPersons = document.querySelector('.persons');
-function person(i, name, nameSerie) {
-    return (
-        `
-        <img src="assets/imagens/persons/p${i}.jpeg" alt="">
-        <div class="divNames">
-            <h4 class="name">${name}</h4>
-            <h4 class="nameSerie">${nameSerie}</h4>
-        </div>
-        `
-    )
-}
-
-for (let i = 1; i <= persons.length; i++) {
-  const item = document.createElement("li");
-  item.classList.add('person');
-  item.innerHTML = person(i, persons[i-1].name, persons[i-1].nameSerie);
-  divPersons.appendChild(item);
-}
 
 //-------------- SEARCH-----------------------------
 
@@ -465,8 +450,7 @@ function search(season,valueSearch, t ){
 
         for(let i = 0; season.length; i++){
             const title = season[i].title;
-
-            
+    
             if(title.toUpperCase().includes(valueSearch.toUpperCase())){
                 
                 let divEps = document.querySelector('.episodes');
@@ -482,9 +466,32 @@ function search(season,valueSearch, t ){
                 divEps.appendChild(li);
                 document.querySelector('.inputSearch').value = '';
                 cont++;
-               
             }
-            
         }
+       
     }
+}
+
+
+
+// -------------- Section do elenco -------------
+
+function person(i, name, nameSerie) {
+    return (
+        `
+        <img src="assets/imagens/persons/p${i}.jpeg" alt="">
+        <div class="divNames">
+            <h4 class="name">${name}</h4>
+            <h4 class="nameSerie">${nameSerie}</h4>
+        </div>
+        `
+    )
+}
+
+let divPersons = document.querySelector('.persons');
+for (let i = 1; i <= persons.length; i++) {
+    const item = document.createElement("li");
+    item.classList.add('person');
+    item.innerHTML = person(i, persons[i-1].name, persons[i-1].nameSerie);
+    divPersons.appendChild(item);
 }
