@@ -503,3 +503,13 @@ const buttForm = document.querySelector('.buttForm');
 buttForm.addEventListener( 'click', function(e){
     e.preventDefault();
 })
+
+
+
+// style pag
+window.addEventListener("scroll", function(){
+
+    const header = document.querySelector('header');
+    
+    header.classList.toggle("back", window.scrollY > 150);
+})

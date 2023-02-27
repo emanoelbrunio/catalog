@@ -11,28 +11,33 @@
 
 *, header, main, footer {
     font-family: 'Inter', sans-serif;
+    transition: 0.5s all;
 }
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 header {
     
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     padding: 30px 150px;
     width: 100%;
     position: fixed;
     background: transparent;
-    z-index: 10;   
+    z-index: 10;
+    align-items: center;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 
 .logoHeader {
@@ -44,12 +49,31 @@ nav {
     justify-content: space-between;
     gap: 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .aHeader {
     color: var(--white);
     font-size: 18;
     font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+.aHeader::after {
+    content: "";
+    display: block;
+    height: 3px;
+    border-radius: 10px;
+    width: 0;
+    margin-top: 5px;
+    background-color: var(--red);
+    transition: 0.5s all;
+
+}
+
+.aHeader:hover::after {
+    width: 100%;
 }
 
 
@@ -66,11 +90,14 @@ main {
     
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding:  0 150px 0 0;
     animation-name: mudaBack;
     animation-duration: 10s;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
+
+
 }
 
 @keyframes mudaBack {
@@ -172,6 +199,7 @@ main {
     gap: 50px;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .contentAbout p {
@@ -196,12 +224,15 @@ main {
     width: 100%;
     flex-direction: column;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .headerContentSeason {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px
 }
 
 .headerContentSeasonTitle {
@@ -226,6 +257,14 @@ main {
 
 .headerContentSeasonTitle select:focus {
     outline: none;
+}
+
+.inputSub {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .inputSearch {
@@ -392,6 +431,7 @@ main {
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contentNewsColumn1 {
@@ -400,6 +440,7 @@ main {
     gap: 30px;
     align-items: start;
     width: 50%;
+    flex-wrap: wrap;
 }
 
 .newsColumn1Texts {
@@ -495,6 +536,7 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 footer p {
@@ -513,4 +555,142 @@ footer p a {
 footer p a:hover {
     opacity: 0.9;
     
+}
+
+
+
+/* ------------- style Pag ------------------ */
+.back {
+    background-color: var(--black);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 0.3px 5px 0.5px var(--red);
+}
+
+
+/* ---------- Responsive ---------*/
+
+@media (min-width: 1940px ){
+    body {
+        width: 1940px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        background: var(--black);
+    }
+    header {
+        width: 1940px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    header, .boxBlack , .about, .seasons, .sectionPersons, .news, footer {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .home {
+        padding-right: 80px;
+    }
+
+    .episodes {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 950px) {
+    header, .boxBlack , .about, .seasons, .sectionPersons, .news, footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .home {
+        padding-right: 50px;
+    }
+    
+    .contentAbout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contentAbout p, .contentAbout iframe {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 850px) {
+    header, .boxBlack , .about, .seasons, .sectionPersons, .news, footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .home {
+        padding-right: 30px;
+    }
+    
+    .contentNews {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .contentNewsColumn1, .contentNewsColumn2, .contentNewsColumn2 form, .newsColumn1Texts {
+        align-items: center;
+        width: 100%;
+    }
+    .contentNewsColumn1 img {
+        width: 50%;
+    }
+
+
+}
+
+@media (max-width: 740px) {
+       
+    .headerContentSeason, .persons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 850px) {
+    header, .boxBlack , .about, .seasons, .sectionPersons, .news, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .home {
+        padding-right: 20px;
+    }
+    
+    .headerSection {
+        gap: 10px;
+    }
+
+    .boxBlack {
+        width: 100%;
+    }
+
+    .contentFooter {
+        gap: 20px
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .home {
+        padding-right: 0;
+    }
+    
+    .eps img {
+        width: 300px;
+     }
+    
+    .contentSpecification {
+        justify-content: start;
+        flex-wrap: wrap;
+    }
 }
