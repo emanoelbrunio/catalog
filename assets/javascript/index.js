@@ -513,3 +513,64 @@ window.addEventListener("scroll", function(){
     
     header.classList.toggle("back", window.scrollY > 150);
 })
+
+
+
+// menu
+const buttMenu = document.querySelector('.menu')
+
+buttMenu.addEventListener('click', function(){
+    const containerMenu = document.querySelector('.containerMenu');
+    
+    if(containerMenu.classList.contains('noneBack')){
+        containerMenu.classList.remove('noneBack') 
+        document.querySelector('.nameMenu').innerText = 'Fechar'
+
+        document.querySelector('.line1Menu').classList.add('translateLine1')
+        document.querySelector('.line2Menu').classList.add('noneLine')
+        document.querySelector('.line3Menu').classList.add('translateLine3')
+    }
+    else {
+        containerMenu.classList.add('noneBack')
+        document.querySelector('.nameMenu').innerText = 'Menu'
+        document.querySelector('.line1Menu').classList.remove('translateLine1')
+        document.querySelector('.line2Menu').classList.remove('noneLine')
+        document.querySelector('.line3Menu').classList.remove('translateLine3')
+    }
+});
+
+window.addEventListener('scroll', function(){
+    const heigthHeader = this.document.querySelector('header').clientHeight;
+    this.document.body.style.setProperty('--heigthMenu', heigthHeader+'px')
+});
+
+window.addEventListener('load', function(){
+    const heigthHeader = this.document.querySelector('header').clientHeight;
+    this.document.body.style.setProperty('--heigthMenu', heigthHeader+'px')
+});
+
+
+
+
+// sumir ao clicar para navegar
+
+const menuHome = document.querySelector('.menuHome');
+const menuAbout = document.querySelector('.menuAbout');
+const menuSeason = document.querySelector('.menuSeason');
+const menuPerson = document.querySelector('.menuPerson');
+const menuNew = document.querySelector('.menuNew');
+
+menuHome.addEventListener('click', none)
+menuAbout.addEventListener('click', none)
+menuSeason.addEventListener('click', none)
+menuPerson.addEventListener('click', none)
+menuNew.addEventListener('click', none)
+
+function none(){
+    const containerMenu = document.querySelector('.containerMenu');
+    containerMenu.classList.add('noneBack')
+    document.querySelector('.nameMenu').innerText = 'Menu'
+    document.querySelector('.line1Menu').classList.remove('translateLine1')
+    document.querySelector('.line2Menu').classList.remove('noneLine')
+    document.querySelector('.line3Menu').classList.remove('translateLine3')
+}

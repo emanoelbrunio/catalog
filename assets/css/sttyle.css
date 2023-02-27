@@ -7,6 +7,7 @@
     --blackSeason: #090909;
     --blackSelect: #2a2323;
     --gray: #a6a6a6;
+    --heigthMenu: 0px;
 }
 
 *, header, main, footer {
@@ -568,6 +569,74 @@ footer p a:hover {
 }
 
 
+/* ---------------menu mobile ------------ */
+
+.menu {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+.linesMenu {
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lineMenu {
+    width: 20px;
+    height: 3px;
+    background-color: var(--red);
+    border-radius: 10px;
+}
+
+.nameMenu {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.containerMenu {
+
+    position: fixed;
+    right: 0;
+    top: var(--heigthMenu);
+    bottom: 0;
+    width: 50%;
+    background-color: var(--black);
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px 0 0 10px;
+    padding: 30px 30px;
+
+    color: var(--white);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    transform: translateX(0);
+    transition: 0.5s all ease-in-out;
+}
+
+.noneBack {
+    transform: translateX(1000px);
+}
+
+.noneLine {
+    display: none;
+}
+
+.translateLine1 {
+    transform: rotate(-35deg) translateY(4px);
+}
+.translateLine3 {
+    transform: rotate(35deg) translateY(-4px);
+}
 /* ---------- Responsive ---------*/
 
 @media (min-width: 1940px ){
@@ -654,6 +723,13 @@ footer p a:hover {
     .headerContentSeason, .persons {
         justify-content: center;
     }
+    .menu {
+        display: flex;
+    }
+    .listHeader {
+        display: none;
+    }
+
 }
 
 @media (max-width: 850px) {
