@@ -17,32 +17,32 @@
     
     <header>
         <nav>
-            <a href="">
+            <a href="#home">
                 <img src="assets/imagens/imgHeader.png" alt="logo do the Walking Dead" class="logoHeader">
             </a>
             
             <ul class="listHeader">
                 <li>
-                    <a href="" class="aHeader">Início</a> 
+                    <a href="#home" class="aHeader">Início</a> 
                 </li>
                 <li>
-                    <a href="" class="aHeader">Sobre a série</a>
+                    <a href="#about" class="aHeader">Sobre a série</a>
                 </li>
                 <li>
-                    <a href="" class="aHeader">Temporadas</a>
+                    <a href="#seasons" class="aHeader">Temporadas</a>
                 </li>
                 <li>
-                    <a href="" class="aHeader">Elenco</a>
+                    <a href="#sectionPersons" class="aHeader">Elenco</a>
                 </li>
                 <li>
-                    <a href="" class="aHeader">Notícias</a>
+                    <a href="#news" class="aHeader">Notícias</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="boxBlack">
 
                 <img src="assets/imagens/logoTWD.svg" alt="Logo do TWD">
@@ -65,7 +65,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="headerSection">
                 
                 <h1 class="titleSection">Sobre a série</h1>
@@ -84,7 +84,7 @@
         </section>
         
         
-        <section class="seasons">
+        <section class="seasons" id="seasons">
             <div class="headerSection">        
                 <div class="line1"></div>
                 <h1 class="titleSection">Temporadas</h1>     
@@ -117,7 +117,7 @@
             </div>
         </section>
 
-        <section class="sectionPersons">
+        <section class="sectionPersons" id="sectionPersons">
             <div class="headerSection">        
                 <h1 class="titleSection">Elenco</h1>     
                 <div class="line1"></div>
@@ -130,17 +130,86 @@
             </div>
         </section>
 
-        <section class="news">
+        <section class="news" id="news">
+            <div class="headerSection">        
+                <div class="line1"></div>
+                <h1 class="titleSection">Notícias</h1>     
+                <div class="line1"></div>
+            </div>
+
+            <div class="contentNews">
+
+                <div class="contentNewsColumn1">
+                    <div class="newsColumn1Texts">
+                        <h3>Deseja receber nóticias sobre a série?</h3>
+                        <p>Preecha o formulário e  envie, fique por dentro de todas as notícias da sua série favitoita!</p>
+                    </div>
+                    <img src="assets/imagens/logoPng.svg" alt="">
+                </div>
+
+                <div class="contentNewsColumn2">
+                    <form action=""> 
+                        <div class="labelInput">
+                            <label for="name">Nome:</label>
+                            <input type="text" name="name" id="name" placeholder="Insira seu nome aqui" required>
+                        </div>
+
+                        <div class="labelInput">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Insira seu e-mail aqui" required>
+                        </div>
+
+                        <div class="labelInput">
+                            <label for="number">Número:</label>
+                            <input type="tel" name="number" id="number" placeholder="Insira seu número aqui" required>
+                        </div>
+
+                        <button class="buttForm" type="submit">
+                            Enviar informações
+                        </button>
+
+                    </form>
+                </div>
+            </div>
 
         </section>
     </main>
 
     <footer>
 
+        <div class="contentFooter">
+        
+            <a href="#home">
+                <img src="assets/imagens/imgHeader.png" alt="logo do the Walking Dead" class="logoHeader">
+            </a>
+            
+            <ul class="listHeader">
+                <li>
+                    <a href="#home" class="aHeader">Início</a> 
+                </li>
+                <li>
+                    <a href="#about" class="aHeader">Sobre a série</a>
+                </li>
+                <li>
+                    <a href="#seasons" class="aHeader">Temporadas</a>
+                </li>
+                <li>
+                    <a href="#sectionPersons" class="aHeader">Elenco</a>
+                </li>
+                <li>
+                    <a href="#news" class="aHeader">Notícias</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <p>
+            Criado e desenvolvido por 
+            <a href="">
+                Emanoel Brunio
+            </a>
+        </p>
     </footer>
-
-
-
     
     <script src="./assets/javascript/index.js" ></script>
 </body>

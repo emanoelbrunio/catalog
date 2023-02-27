@@ -13,6 +13,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     
     display: flex;
@@ -47,6 +51,8 @@ nav {
     font-size: 18;
     font-weight: 700;
 }
+
+
 
 main {
     width: 100%;
@@ -344,7 +350,7 @@ main {
     align-items: center;
 }
 .person img {
-    border-radius: 10px;    
+    border-radius: 100%;    
 }
 
 .divNames {
@@ -366,4 +372,145 @@ main {
     font-weight: 700;
     color: var(--white80);
     width: 100%; 
+}
+
+
+
+/* ------------------- News --------------------- */
+
+.news {
+    background: var(--blackSeason);
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.contentNews {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentNewsColumn1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+    width: 50%;
+}
+
+.newsColumn1Texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.newsColumn1Texts h3 {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.newsColumn1Texts p {
+    color: var(--gray);
+    font-size: 18px;
+    width: auto;
+}
+
+.contentNewsColumn2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.contentNewsColumn2 form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    align-items: center;
+}
+
+.labelInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.labelInput label {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.labelInput input {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.labelInput input:focus {
+    outline: 2px solid var(--red);
+}
+
+.labelInput input::placeholder {
+    color: var(--gray);
+}
+
+.buttForm {
+    background: var(--red);
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 700;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.buttForm:hover {
+    opacity: 0.8;
+}
+
+/* -------------- footer ------------- */
+
+footer {
+    background: var(--backAbout);
+    padding: 30px 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.contentFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer p {
+    color: var(--white);
+    font-size: 18px;
+}
+
+footer p a {
+    color: var(--red);
+    text-decoration: underline;
+    transition: 0.5s all;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer p a:hover {
+    opacity: 0.9;
+    
 }

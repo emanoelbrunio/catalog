@@ -24,6 +24,7 @@ const s1 = [
         duration: 45
     },
 ]
+
 const s2 = [
     {
         title: 'O que vem pela frente',
@@ -495,3 +496,10 @@ for (let i = 1; i <= persons.length; i++) {
     item.innerHTML = person(i, persons[i-1].name, persons[i-1].nameSerie);
     divPersons.appendChild(item);
 }
+
+
+// evitando atualizar
+const buttForm = document.querySelector('.buttForm');
+buttForm.addEventListener( 'click', function(e){
+    e.preventDefault();
+})
